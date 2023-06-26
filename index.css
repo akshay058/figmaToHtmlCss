@@ -1,0 +1,168 @@
+:root {
+  /* backgrounds */
+  --btn_bg: #32c1ff;
+  --primary_bg: #ffffff;
+  /* text */
+  --main_t: #000000;
+  --grey_t: #636363;
+  --lightgrey_t: #949494;
+}
+
+/* default changes */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* display flex*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button */
+.btn {
+  color: var(--primary_bg);
+  background-color: var(--btn_bg);
+  font-size: 1.5rem;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #bdb8b8;
+}
+
+.wrapper {
+  background-color: var(--primary_bg);
+  width: 64rem;
+  height: 25rem;
+  padding: 1.25rem;
+  gap: 1.875rem;
+
+  .fruit {
+    display: flex;
+    padding: 0.9375rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1875rem;
+    align-self: stretch;
+    border: 1px solid #828282;
+
+    .head {
+      font-size: 2rem;
+      font-family: Inter;
+      font-weight: 600;
+    }
+
+    .fruit__list {
+      color: var(--main_t);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.3125rem;
+      align-self: stretch;
+
+      .list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 1.25rem;
+
+        .fruit__name {
+          color: var(--lightgrey_t);
+          font-size: 1.5rem;
+          font-family: Inter;
+        }
+
+        .fruit__active {
+          color: var(--grey_t);
+        }
+
+        .fruit__price {
+          width: 7.1875rem;
+          color: var(--grey_t);
+          text-align: right;
+          font-size: 2.25rem;
+          font-family: Inter;
+          display: flex;
+          justify-content: flex-end;
+
+          .price {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .deal {
+    height: 21.625rem;
+    flex-direction: column;
+    gap: 1.875rem;
+    flex: 1 0 0;
+
+    .deal__email {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      align-self: stretch;
+
+      .deal__alert {
+        font-size: 2rem;
+        font-family: Inter;
+        font-weight: 600;
+        color: var(--main_t);
+      }
+
+      .deal__e {
+        color: var(--lightgrey_t);
+        font-size: 0.75rem;
+        font-family: Inter;
+      }
+    }
+
+    .email {
+      height: 2.5rem;
+      align-self: stretch;
+      border: 1px solid #ababab;
+    }
+
+    .subscribe {
+      height: 4.0625rem;
+      padding: 0.625rem 1.875rem;
+      gap: 0.625rem;
+      align-self: stretch;
+      outline: none;
+      border: none;
+    }
+
+    .actions {
+      padding: 1.25rem;
+      gap: 0.625rem;
+
+      .action__head {
+        color: var(--main_t);
+        font-size: 1.5625rem;
+        font-family: Inter;
+        font-weight: 700;
+      }
+
+      .action__btn {
+        height: 4rem;
+        padding: 0.625rem 1.875rem;
+        gap: 0.625rem;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}

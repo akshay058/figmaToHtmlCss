@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>Instient</title>
+  </head>
+  <body class="flex">
+    <div class="wrapper flex">
+      <!-- left Card -->
+      <div class="fruit">
+        <p class="head">Fruit</p>
+
+        <ul class="fruit__list">
+          <li class="list">
+            <p class="fruit__name fruit__active">Orange</p>
+            <p class="fruit__price">
+              <span class="price">$</span>2.12<span class="price">9</span>
+            </p>
+          </li>
+
+          <li class="list">
+            <p class="fruit__name">Apple</p>
+            <p class="fruit__price">
+              <span class="price">$</span>1.12<span class="price">9</span>
+            </p>
+          </li>
+
+          <li class="list">
+            <p class="fruit__name">Banana</p>
+            <p class="fruit__price">
+              <span class="price">$</span>3.22<span class="price">9</span>
+            </p>
+          </li>
+
+          <li class="list">
+            <p class="fruit__name">Apricot</p>
+            <p class="fruit__price">
+              <span class="price">$</span>2.14<span class="price">9</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- End of left  Card -->
+
+      <!-- right Card -->
+      <div class="deal flex">
+        <div class="deal__email">
+          <h3 class="deal__alert">Deal Alerts</h3>
+          <p class="deal__e">Enter e-mail address</p>
+        </div>
+
+        <input type="email" name="email" class="email" />
+
+        <button class="subscribe flex btn">SUBSCRIBE NOW</button>
+
+        <div class="actions flex">
+          <p class="action__head">Actions</p>
+
+          <button class="action__btn btn flex">ORDER NOW</button>
+
+          <button class="action__btn btn flex">CALL NOW</button>
+        </div>
+      </div>
+      <!-- End of right Card -->
+    </div>
+  </body>
+</html>
